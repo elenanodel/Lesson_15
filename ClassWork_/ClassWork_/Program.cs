@@ -72,7 +72,8 @@ namespace ClassWork_
             }
 
             //  methods
-            public void Print()
+            //  задали метод, который может быть переопределён  "virtual"
+            public virtual void Print()
             {
                 Console.Write("{0} {1} {2}", author, name, pages);
             }
@@ -107,7 +108,8 @@ namespace ClassWork_
                 get { return _scienceArea; }
             }
 
-            public void Print()
+            //   переопределили "override"
+            public override void Print()
             {
                 Console.Write("{0} {1} {2} {3}", author, name, pages, scienceArea);
             }
